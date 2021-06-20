@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node .
+  - docker build -t simple-node ./simple-node
   - docker tag simple-node zikriye/simple-node:latest
 
 after_success:
